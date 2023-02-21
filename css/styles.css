@@ -1,0 +1,247 @@
+/* This is my stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+  font-family: 'Roboto Mono', monospace;
+    background-color: #edddf0;
+    /* margin-left: px; */
+
+}
+
+p {
+  font-size:10pt;
+  font-weight:400;
+  font-style:normal;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size:45pt;
+  font-weight:700;
+  font-style: oblique;
+  color:#733C7A;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  font-size:30pt;
+  font-weight:700;
+  margin-bottom: 25px;
+}
+
+h6 {
+  font-size:24pt;
+  font-style:italic;
+  font-weight:500;
+}
+
+
+
+a:link {
+  font-size:12pt;
+  font-weight:500;
+}
+
+a:hover {
+  font-size:12pt;
+  font-weight:500;
+  font-style: italic;
+}
+
+a:visited {
+  font-size:12pt;
+  font-weight:500;
+  font-style: italic;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  margin-left: 20px;
+}
+
+ul li::before {
+  content: "\25B6";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color:#733C7A ; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-top: 1em;
+}
+
+ol li::before {
+  color:#733C7A ; /* Change the color */
+  font-weight: 500; /* If you want it to be bold */
+  font-style: italic;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+hr {
+  border: 1px solid #733C7A;
+  width: 75%
+}
+
+.content {
+  height: 100%;
+  top: 0;
+  width: 60%;
+  margin-left: 30%;
+}
+
+.leftside {
+  border-radius: 25px;
+  padding: 2%;
+  margin: 2%;
+  text-align: left;
+  margin-right: 25%;
+}
+
+.leftside a {
+  text-decoration: none;
+  font-size:10pt;
+  font-weight:400;
+  font-style:normal;
+}
+
+.leftside a:hover {
+  font-size:10pt;
+  font-weight:400;
+  font-style:normal;
+}
+
+.rightside {
+  border-radius: 25px;
+  padding: 2%;
+  margin: 2%;
+  text-align: right;
+  margin-left: 25%;
+}
+
+.rightside a {
+  text-decoration: none;
+  font-size:10pt;
+  font-weight:400;
+  font-style:normal;
+}
+
+.rightside a:hover {
+  font-size:10pt;
+  font-weight:400;
+  font-style:normal;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  text-align: center;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F4C6FA;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 5%; /* Place content 60px from the top */
+  padding-bottom: 10%;
+  padding-right: 1%;
+  width:22%;
+  position: fixed;
+  display: block;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  display: block;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+     }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav {
+    justify-content: center;
+    text-align: center;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F4C6FA;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+  }
+  .content {
+    font-size: 10px;
+  }
+}
+
+header {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+  color: #733C7A;
+}
+
+.button {
+  display: block;
+  color: #733C7A;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.quotes {
+  padding: 20px 50px;
+  min-height: 200px;
+  text-align: center;
+  background-color: #F4C6FA;
+}
+
+.quote-text {
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+.appweek12 {
+  margin-left: 50px;
+}
+
+.activity-type {
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boxes {
+  margin-left: 500px;
+}
+.allBox {
+  display: flex;
+}
